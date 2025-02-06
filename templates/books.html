@@ -1,0 +1,75 @@
+{% extends "main.html" %}
+{% block title %}Page Title{% endblock %}
+{% block content %}
+<title>Image Gallery</title>
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px; /* Space between images */
+    }
+    .gallery img {
+        width: calc(40% - 10px); /* 50% width minus half the gap for two images per row */
+        height: auto;
+    }
+</style>
+<div class="gallery">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.10 PM (1).jpeg" alt="Image 1">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.10 PM (2).jpeg" alt="Image 2">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.10 PM.jpeg" alt="Image 3">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM (1).jpeg" alt="Image 4">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM (2).jpeg" alt="Image 5">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM (3).jpeg" alt="Image 6">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM (4).jpeg" alt="Image 7">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM (5).jpeg" alt="Image 8">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM (6).jpeg" alt="Image 9">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM (7).jpeg" alt="Image 10">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.11 PM.jpeg" alt="Image 11">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.12 PM (1).jpeg" alt="Image 12">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.12 PM (2).jpeg" alt="Image 13">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.12 PM (3).jpeg" alt="Image 14">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.12 PM (4).jpeg" alt="Image 15">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.12 PM (5).jpeg" alt="Image 16">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.12 PM.jpeg" alt="Image 17">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.13 PM (1).jpeg" alt="Image 18">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.13 PM (2).jpeg" alt="Image 19">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.13 PM.jpeg" alt="Image 20">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.14 PM (1).jpeg" alt="Image 21">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.14 PM (2).jpeg" alt="Image 22">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.14 PM (3).jpeg" alt="Image 23">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.14 PM.jpeg" alt="Image 24">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.15 PM (1).jpeg" alt="Image 25">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.15 PM (2).jpeg" alt="Image 26">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.15 PM (3).jpeg" alt="Image 27">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.15 PM.jpeg" alt="Image 28">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (10).jpeg" alt="Image 29">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (11).jpeg" alt="Image 30">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (1).jpeg" alt="Image 31">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (2).jpeg" alt="Image 32">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (3).jpeg" alt="Image 33">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (4).jpeg" alt="Image 34">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (5).jpeg" alt="Image 35">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (6).jpeg" alt="Image 36">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (7).jpeg" alt="Image 37">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (8).jpeg" alt="Image 38">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM (9).jpeg" alt="Image 39">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.16 PM.jpeg" alt="Image 40">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (10).jpeg" alt="Image 41">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (11).jpeg" alt="Image 42">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (12).jpeg" alt="Image 43">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (13).jpeg" alt="Image 44">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (14).jpeg" alt="Image 45">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (1).jpeg" alt="Image 46">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (2).jpeg" alt="Image 47">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (3).jpeg" alt="Image 48">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (4).jpeg" alt="Image 49">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (5).jpeg" alt="Image 50">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (6).jpeg" alt="Image 51">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (7).jpeg" alt="Image 52">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (8).jpeg" alt="Image 53">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM (9).jpeg" alt="Image 54">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.17 PM.jpeg" alt="Image 55">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.18 PM (1).jpeg" alt="Image 56">
+    <img src="../static/images/research/WhatsApp Image 2025-01-23 at 10.59.18 PM.jpeg" alt="Image 57">
+</div>
+{% endblock %}

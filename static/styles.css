@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #EB2227 !important;
+  position: sticky;
+  z-index: 10;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  background-color: white;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+}
+
+/* Button Styles */
+.custom-btn {
+  background-color: white !important;
+  color: #EB2227 !important;
+  margin-right: 20px;
+  padding-top: 0.45rem;
+}
+
+.custom-btn:hover {
+  background-color: #EB2227 !important;
+  color: white !important;
+}
+
+/* Dropdown Styles */
+.navbut {
+  background-color: #EB2227 !important;
+  color: white !important;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.navbut:hover {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 15px;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.navlis:hover {
+  background-color: #EB2227 !important;
+  color: white !important;
+}
+.card {
+  transition: box-shadow 0.3s ease, margin 0.3s ease;
+  height: auto;
+  width: 100%;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px 3px rgba(235, 34, 39, 0.8);
+  margin: 0; /* or any margin adjustments you want */
+}
+
+/*
+#cube{
+  position: fixed;
+  top: 0;
+  left: 2;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.foreground-content {
+  position: relative;
+  z-index: 10;
+}*/
+
+
+.cube {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+spline-viewer {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.about-section {
+  background-color: #dc3545; /* Bootstrap 'bg-danger' red */
+  color: white; /* White text */
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  margin-top: 1rem;
+  shape-margin: 5px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+    filter: invert(0); /* Start with original colors */
+    transition: filter 0.3s ease;
+}
+.card:hover img {
+    filter: invert(1); /* Invert on card hover */
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px black;
+    background-color: #EB2227;
+    color: white;
+}
+.card h5 {
+  color:black;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+}
+.card p {
+  font-size: 0.9em;
+  color: #EB2227;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card:hover h5,
+.card:hover p {
+color: white !important;
+font-family: 'Ubuntu Mono', monospace, sans-serif;
+} 
+
+.footer-icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  filter: invert(1);
+  fill:white;
+}
+.headfoot {
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+}
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+/* Custom Footer Styles */
+/* Button style for footer links */
+.footer-section a {
+color: white;
+background-color: transparent;
+text-decoration: none;
+display: inline-block;
+padding:  1rem;
+border: 2px solid white;
+border-radius: 0.5rem;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for footer links */
+.footer-section a:hover {
+background-color: white;
+color: #1a1a1a;
+text-decoration: none;
+}
+
+/* Optional: Container to layout footer buttons horizontally with spacing */
+.footer-buttons {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+justify-content: center;
+margin-top: 1rem;
+}
+
+.iconigy{
+  color: #EB2227;
+}
+.cardit{
+color: black;
+padding: 20px;
+}
+.footer a {
+  color: white!important;
+}

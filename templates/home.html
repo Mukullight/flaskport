@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-md sticky-top" style="background-color: #EB2227;">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="#" style="color: white;">
+          <img src="../static/images/caret.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" style="background-color: white;">
+          Mukul Namagiri
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 iconigy mb-lg-0">
+            <li class="nav-item">
+              <a href="{{ url_for('home') }}" class="btn custom-btn">Primary</a>
+            </li>
+            
+    
+            <!-- About Me Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle navbut" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Me
+              </a>
+              <ul class="dropdown-menu">
+                <li><hr class="dropdown-divider navlis"></li>
+                <li><a class="dropdown-item navlis" href="{{ url_for('education') }}">Education</a></li>
+                <li><hr class="dropdown-divider navlis"></li>
+                <li><a class="dropdown-item navlis" href="{{ url_for('experience') }}">Experience</a></li>
+                <li><hr class="dropdown-divider navlis"></li>
+                <li><a class="dropdown-item navlis" href="{{ url_for('skills') }}">Skills</a></li>
+              </ul>
+            </li>
+    
+            <!-- Projects Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle navbut" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navlis" href="{{ url_for('research') }}">Research</a></li>
+                <li><hr class="dropdown-divider navlis"></li>
+                <li><a class="dropdown-item navlis" href="{{ url_for('projects') }}">Projects</a></li>
+                <li><hr class="dropdown-divider navlis"></li>
+                <li><a class="dropdown-item navlis" href="{{ url_for('opensource') }}">Open Source</a></li>
+                <li><hr class="dropdown-divider navlis"></li>
+                <li><a class="dropdown-item navlis" href="{{ url_for('books') }}">Books</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid">
+      <div class="row align-items-center">
+          <!-- Cube Section -->
+          <div class="col-md-4 about-section">
+            <h1 class="mb-3">About Me</h1>
+            <h4 class="card-text">
+                Highly skilled, passionate, and hardworking AI developer with an ability to complete functional specifications by
+                developing, testing, and deploying real-time solutions. Ensuring compliance and security standards.
+            </h4>
+        </div>
+          <div class="col-md-7 text-center">
+            <div class="cube">
+              <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+              <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/OiN7KW8ja6AN7U9K/scene.splinecode"></spline-viewer>
+          </div>
+          </div>
+          
+          <!-- Text Section -->
+           </div>
+           <h2 class="mt-5">About me</h2>
+
+           <h2 class="mt-5"></h2>
+           <div class="container my-4">
+            <div class="row g-4">
+              <!-- Card 1: Presentation -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <a href="{{ url_for('home') }}" class="text-decoration-none text-dark">
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/pgimages/person.png') }}" class="card-img-top" alt="Presentation">
+                    <div class="card-body">
+                      <h5 class="card-title">Presentation</h5>
+                      <p class="card-text">Here is a simple introduction and short bio about me.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated Feb 4</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Card 2: Education -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <a href="{{ url_for('education') }}" class="text-decoration-none text-dark">
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/pgimages/university.png') }}" class="card-img-top" alt="Education">
+                    <div class="card-body">
+                      <h5 class="card-title">Education</h5>
+                      <p class="card-text">Education and Certifications.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated Feb 4</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Card 3: Experience -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <a href="{{ url_for('experience') }}" class="text-decoration-none text-dark">
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/pgimages/tools.png') }}" class="card-img-top" alt="Experience">
+                    <div class="card-body">
+                      <h5 class="card-title">Experience</h5>
+                      <p class="card-text">Work and Technical Experience.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated Feb 4</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Card 4: Skills -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <a href="{{ url_for('skills') }}" class="text-decoration-none text-dark">
+                  <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/pgimages/skills.png') }}" class="card-img-top" alt="Skills">
+                    <div class="card-body">
+                      <h5 class="card-title">Technical and Interpersonal Skills</h5>
+                      <p class="card-text">Honors/Awards, Volunteering.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated Feb 4</small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          
+
+  
+
+  <h2 class="mt-5">Projects</h2>
+
+  <h2 class="mt-5"></h2>
+  <div class="container my-4">
+   <div class="row g-4">
+
+     <!-- Card 1: Research -->
+     <div class="col-12 col-md-6 col-lg-4">
+       <a href="{{ url_for('research') }}" class="text-decoration-none text-dark">
+         <div class="card h-100">
+           <img src="{{ url_for('static', filename='images/icons/idea.png') }}" class="card-img-top" alt="Research">
+           <div class="card-body">
+             <h5 class="card-title">Research</h5>
+             <p class="card-text">Reearch Work</p>
+           </div>
+           <div class="card-footer">
+             <small class="text-muted">Last updated Feb 5</small>
+           </div>
+         </div>
+       </a>
+     </div>
+
+ 
+     <!-- Card 2: Projects -->
+     <div class="col-12 col-md-6 col-lg-4">
+       <a href="{{ url_for('projects') }}" class="text-decoration-none text-dark">
+         <div class="card h-100">
+           <img src="{{ url_for('static', filename='images/icons/project.png') }}" class="card-img-top" alt="Projects">
+           <div class="card-body">
+             <h5 class="card-title">Projects</h5>
+             <p class="card-text">Personal Projects</p>
+           </div>
+           <div class="card-footer">
+             <small class="text-muted">Last updated Feb 5</small>
+           </div>
+         </div>
+       </a>
+     </div>
+
+ 
+     <!-- Card 3: Books -->
+     <div class="col-12 col-md-6 col-lg-4">
+       <a href="{{ url_for('books') }}" class="text-decoration-none text-dark">
+         <div class="card h-100">
+           <img src="{{ url_for('static', filename='images/icons/book2.png') }}" class="card-img-top" alt="books">
+           <div class="card-body">
+             <h5 class="card-title">Books</h5>
+             <p class="card-text">Books and Resources</p>
+           </div>
+           <div class="card-footer">
+             <small class="text-muted">Last updated Feb 4, 20:38</small>
+           </div>
+         </div>
+       </a>
+     </div>
+
+ 
+     <!-- Card 4: Open Source -->
+     <div class="col-12 col-md-6 col-lg-4">
+       <a href="{{ url_for('opensource') }}" class="text-decoration-none text-dark">
+         <div class="card h-100">
+           <img src="{{ url_for('static', filename='images/icons/collab.png') }}" class="card-img-top" alt="Skills">
+           <div class="card-body">
+             <h5 class="card-title">Open Source Contributions</h5>
+             <p class="card-text">Community Contributions</p>
+           </div>
+           <div class="card-footer">
+             <small class="text-muted">Last updated Feb 5</small>
+           </div>
+         </div>
+       </a>
+     </div>
+     
+   </div>
+ </div>
+            </div>
+          </div>
+          <!-- Additional cards can be added similarly -->
+
+        </div>
+      
+      </div>
+      <footer class="bg-white text-danger py-4 border border-danger border-3 mt-lg-6">
+
+
+        <div class="container iconigy">
+          <div class="row">
+            <!-- Navigation 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="cardit bg-danger text-white py-4 border-0">
+                <h4 class="text-danger headfoot">Navigation 1</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2 iconigy">
+                    <a href="{{ url_for('home') }}" class="text-danger text-decoration-none headfoot">
+                      <svg class="footer-icon me-2" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                        <path  d="m528 32h-480c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48v-352c0-26.5-21.5-48-48-48zm0 400h-480v-352h480zm-320-176c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm-89.6 128h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6-10.8 0-18.7 8-44.8 8-26.9 0-33.4-8-44.8-8-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2zm241.6-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8h-112c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8h-112c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8h-112c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8z" />
+                      </svg>
+                      About Me
+                    </a>
+                  </li>
+                  <li class="mb-2 iconigy">
+                    <a href="{{ url_for('education') }}" class="text-danger text-decoration-none headfoot">
+                      <svg class="footer-icon me-2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m496 128v16a8 8 0 0 1 -8 8h-24v12c0 6.627-5.373 12-12 12h-392c-6.627 0-12-5.373-12-12v-12h-24a8 8 0 0 1 -8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88a8 8 0 0 1 4.941 7.392zm-24 304h-432c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zm-376-240v192h-36c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36v-192h-64v192h-64v-192h-64v192h-64v-192z"/>
+                      </svg>
+                      Education
+                    </a>
+                  </li>
+                  <li class="mb-2 iconigy">
+                    <a href="{{ url_for('experience') }}" class="text-danger text-decoration-none headfoot">
+                      <svg class="footer-icon me-2" height="8" viewBox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m.34 0a.5.5 0 0 0 -.34.5v5a.5.5 0 0 0 .5.5h2.5v1h-1c-.55 0-1 .45-1 1h6c0-.55-.45-1-1-1h-1v-1h2.5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0 -.5-.5h-7a.5.5 0 0 0 -.09 0 .5.5 0 0 0 -.06 0zm.66 1h6v4h-6z"/>
+                      </svg>
+                      Work Experience
+                    </a>
+                  </li>
+                  <li class="mb-2 iconigy">
+                    <a href="{{ url_for('skills') }}" class="text-danger text-decoration-none headfoot">
+                      <svg class="footer-icon me-2" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m30 30h-8v-26h8z"/>
+                        <path d="m20 30h-8v-18h8z"/>
+                        <path d="m10 30h-8v-12h8z"/>
+                        <path d="m0 0h32v32h-32z" fill="none"/>
+                      </svg>
+                      Skills
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+      
+            <!-- Navigation 2 -->
+<div class="col-md-4 mb-3">
+  <div class="cardit bg-danger text-white py-4 border-0">
+    <h4 class="text-danger headfoot">Navigation 2</h4>
+    <ul class="list-unstyled">
+      <li class="mb-2 iconigy">
+        <a href="{{ url_for('research') }}" class="text-danger text-decoration-none headfoot">
+          <svg class="footer-icon me-2" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="m528 32h-480c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48v-352c0-26.5-21.5-48-48-48zm0 400h-480v-352h480zm-320-176c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm-89.6 128h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6-10.8 0-18.7 8-44.8 8-26.9 0-33.4-8-44.8-8-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2zm241.6-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8h-112c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8h-112c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8h-112c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8z"/>
+          </svg>
+          Research
+        </a>
+      </li>
+      <li class="mb-2 iconigy">
+        <a href="{{ url_for('projects') }}" class="text-danger text-decoration-none headfoot">
+          <svg class="footer-icon me-2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m4 21h16c1.1046 0 2-.8954 2-2v-11c0-1.10457-.8954-2-2-2h-9l-1.70313-2.5547c-.18547-.2782-.4977-.4453-.83205-.4453h-4.46482c-1.10457 0-2 .89543-2 2v14c0 1.1046.89543 2 2 2z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </svg>
+          Projects
+        </a>
+      </li>
+      <li class="mb-2 iconigy">
+        <a href="{{ url_for('opensource') }}" class="text-danger text-decoration-none headfoot">
+          <svg class="footer-icon me-2" viewBox="0 0 1024 1063.274" xmlns="http://www.w3.org/2000/svg">
+            <path d="M817.84 524.27H206.16v-67.964h611.68zm0 348.886H206.16V805.19h611.68zm0-176.708H206.16v-67.965h611.68zM0 21.333h1024v1024H0zm956.035 67.965H67.965v888.07h888.07zM1024 352.094H0V21.334h1024zM67.965 284.13h888.07V89.296H67.966zm183.504-63.434h-86.09V152.73h86.09zm172.176 0h-86.088V152.73h86.088zm176.708 0h-86.088V152.73h86.088z"/>
+          </svg>
+          Open Source and Blogs
+        </a>
+      </li>
+      <li class="mb-2 iconigy">
+        <a href="{{ url_for('books') }}" class="text-danger text-decoration-none headfoot">
+          <svg class="footer-icon me-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m22.47 18.82-1-3.86-3.15-11.59a1 1 0 0 0 -1.22-.71l-3.87 1a1 1 0 0 0 -.73-.33h-10a1 1 0 0 0 -1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-8l2.2 8.22a1 1 0 0 0 1 .74 1.15 1.15 0 0 0 .26 0l4.83-1.29a1 1 0 0 0 .61-.47 1.05 1.05 0 0 0 .07-.71zm-16 .55h-3v-2h3zm0-4h-3v-6h3zm0-8h-3v-2h3zm5 12h-3v-2h3zm0-4h-3v-6h3zm0-8h-3v-2h3zm2.25-1.74 2.9-.78.52 1.93-2.9.78zm2.59 9.66-1.55-5.8 2.9-.78 1.55 5.8zm1 3.86-.52-1.93 2.9-.78.52 1.93z"/>
+          </svg>
+          Books
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      
+            <!-- Connect -->
+            <div class="col-md-4 mb-3">
+              <div class="cardit bg-danger text-white py-4 border-0">
+              <h4 class="text-danger headfoot">Connect</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2 iconigy">
+                  <a href="mailto:mukulnamagiri1@gmail.com" class="text-danger text-decoration-none headfoot">
+                    <svg class="footer-icon me-2" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m32 6v20c0 1.135-.865 2-2 2h-2v-18.151l-12 8.62-12-8.62v18.151h-2c-1.135 0-2-.865-2-2v-20c0-.568.214-1.068.573-1.422.359-.365.859-.578 1.427-.578h.667l13.333 9.667 13.333-9.667h.667c.568 0 1.068.214 1.427.578.359.354.573.854.573 1.422z"/>
+                    </svg>
+                    Email
+                  </a>
+                </li>
+                <li class="mb-2 iconigy">
+                  <a href="https://www.linkedin.com/in/mukul-namagiri-434427190/" class="text-danger text-decoration-none headfoot">
+                    <svg class="footer-icon me-2" enable-background="new 0 0 100 100" height="100" viewBox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m80.667 14h-61.352c-2.934 0-5.315 2.325-5.315 5.188v61.617c0 2.867 2.381 5.195 5.315 5.195h61.352c2.936 0 5.333-2.328 5.333-5.195v-61.617c0-2.863-2.397-5.188-5.333-5.188zm-45.313 61.354h-10.684v-34.359h10.684zm-5.342-39.057c-3.423 0-6.19-2.774-6.19-6.194 0-3.415 2.767-6.189 6.19-6.189 3.415 0 6.189 2.774 6.189 6.189 0 3.42-2.774 6.194-6.189 6.194zm45.338 39.057h-10.667v-16.708c0-3.986-.078-9.111-5.551-9.111-5.558 0-6.405 4.341-6.405 8.822v16.998h-10.675v-34.36h10.245v4.692h.146c1.426-2.7 4.91-5.549 10.106-5.549 10.806 0 12.802 7.114 12.802 16.369v18.847z"/>
+                    </svg>
+                    LinkedIn
+                  </a>
+                </li>
+                <li class="mb-2 iconigy">
+                  <a href="https://x.com/MNamagiri66052" class="text-danger text-decoration-none headfoot">
+                    <svg class="footer-icon me-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m15.5 10v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h-3v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1h-1v-2h-1v-1h-1v-1h-7v1h1v1h1v1h1v2h1v1h1v2h1v1h1v2h1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h3v-1h1v-1h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v2h1v1h1v1h7v-1h-1v-1h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1z"/>
+                    </svg>
+                    X
+                  </a>
+                </li>
+                <li class="mb-2 iconigy">
+                  <a href="https://github.com/Mukullight" class="text-danger text-decoration-none headfoot">
+                    <svg class="footer-icon me-2" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+                      <path  d="m165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zm65.8-383.2c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zm-147.6 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center mt-3">
+              <p class="mb-0">© 2023 Mukul Namagiri. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+<style>
+  
