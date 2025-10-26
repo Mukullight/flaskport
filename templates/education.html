@@ -1,122 +1,154 @@
 {% extends "main.html" %}
 {% block title %}Page Title{% endblock %}
 {% block content %}
+<div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Education</h2>
+            </div>
+        </div>
 
-<div>
-<strong>POST GRAD</strong>
-<p>
+        <!-- Post Grad Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-primary shadow-sm">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <a href="https://drive.google.com/file/d/1WJKWwYwT--mZs78x9849SaJfx3fxjfos/view?usp=sharing" target="_blank">
+                                <img src="../static/images/education/bcu.jpg" alt="Birmingham City University" class="rounded-circle" width="100" height="100">
+                            </a>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title text-primary">Master’s Degree</h5>
+                            <p class="card-text">Artificial Intelligence</p>
+                            <span class="badge bg-success">Grade: Merit</span>
+                            <p class="card-text"><small class="text-muted">Birmingham, United Kingdom</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <div style="background-color: black; color: red; border: 10px solid black">
-    <a href="https://drive.google.com/file/d/1WJKWwYwT--mZs78x9849SaJfx3fxjfos/view?usp=sharing">
-    <img src="../static/images/education/bcu.jpg" alt="Smiley face image"
-      style="float:left; width:100px; height:100px;">
-  </a>
-    <span style="vertical-align: bottom;">
-      <strong style="color:red;">Masters’s Degree</strong><br>
-      Artificial intelligence<br>
-      <strong style="color:red;">Grade: Merit</strong><br>
-       <strong style="color: red;">Birmingham, United Kingdom</strong>
-    </span>
-  </div>
-</p>
+        <!-- Under Grad Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-info shadow-sm">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <a href="https://drive.google.com/file/d/1BSUr6zfqHqhSYrNUhxFjbeO4B5ON3m9W/view?usp=sharing" target="_blank">
+                                <img src="../static/images/education/uni.png" alt="University" class="rounded-circle" width="100" height="100">
+                            </a>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title text-info">Bachelor’s Degree</h5>
+                            <p class="card-text">Math and Computer Science</p>
+                            <span class="badge bg-success">GPA: 8.0</span>
+                            <p class="card-text"><small class="text-muted">India</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<hr size="30">
+        <!-- Certifications Section -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-4">Certifications</h3>
+            </div>
+        </div>
 
+        <!-- AI Explainability Cert -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <h5>AI Explainability 360 for AI and ML</h5>
+                <hr>
+            </div>
+        </div>
 
-<strong>UNDER GRAD</strong>
+        <!-- IBM Cert -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="card border-secondary shadow-sm">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <a href="https://drive.google.com/file/d/1eslnTTtpN5r9uZsm_jnSdh09AlY_FaRa/view?usp=sharing" target="_blank">
+                                <img src="../static/images/education/ibm.jpg" alt="IBM Certification" class="rounded" width="65" height="65">
+                            </a>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title">IBM Training</h5>
+                            <p class="card-text"><small class="text-muted">Online Certifications</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<p>
+        <!-- ELAN Hackathon -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <h5>ELAN HACKATHON</h5>
+                <h6 class="text-success">WINNER</h6>
+                <hr>
+                <div class="card border-warning shadow-sm">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <a href="https://drive.google.com/file/d/1PswBBZPzSAGpljZsDXQgNlsFtKfXSC-k/view?usp=sharing" target="_blank">
+                                <img src="../static/images/education/ofs.jpeg" alt="Office for Students" class="rounded" width="65" height="65">
+                            </a>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title">Office for Students</h5>
+                            <p class="card-text"><small class="text-muted">Winner ELAN Hackathon</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <div style="background-color: black; color: red; border: 10px solid black">
-    <a href="https://drive.google.com/file/d/1BSUr6zfqHqhSYrNUhxFjbeO4B5ON3m9W/view?usp=sharing">
-    <img src="../static/images/education/uni.png" alt="Smiley face image"
-      style="float:left; width:100px; height:100px;">
-  </a>
-    <span style="vertical-align: bottom;">
-      <strong style="color:red;">Bachelor’s Degree</strong><br>
-      Math and Computer Science<br>
-      <strong style="color:red ;">GPA: 8.0</strong><br>
-       <strong style="color: red;">India</strong>
-    </span>
-  </div>
-</p>
-</div>
-<div>
-  <hr>
-<h3>Certifications</h3>
-<br>
-<h5> AI Explainability 360 for AI and ML</h5>
-<hr>
-<h5> IBM training</h5>
-<p>
-    <a href="https://drive.google.com/file/d/1eslnTTtpN5r9uZsm_jnSdh09AlY_FaRa/view?usp=sharing">
-    <img src="../static/images/education/ibm.jpg" alt="Smiley face image" style="float:left; width:65px; height:65px;">
-     </a>
-  <span style="vertical-align:bottom">
-    &nbsp;<strong>IBM</strong><br>
-    &nbsp;Online Certifications
-  </span>
-</p>
-</div>
-<br>
-<hr>
+        <!-- MTTS Programme -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <h5>MTTS Programme</h5>
+                <h6>Level 1</h6>
+                <div class="card border-dark shadow-sm">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <a href="https://drive.google.com/file/d/14AeXM9J5milMt_6qDR-HYSEVC6mb_oHc/view?usp=sharing" target="_blank">
+                                <img src="../static/images/education/madr.png" alt="IIT Madras" class="rounded" width="65" height="65">
+                            </a>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title">Indian Institute of Technology, Madras</h5>
+                            <p class="card-text"><small class="text-muted">MTTS Programme</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-<br>
-<h5> ELAN HACKATHON</h5>
-<hr>
-<h5> WINNER</h5>
-<p>
-    <a href="https://drive.google.com/file/d/1PswBBZPzSAGpljZsDXQgNlsFtKfXSC-k/view?usp=sharing">
-    <img src="../static/images/education/ofs.jpeg" alt="Smiley face image" style="float:left; width:65px; height:65px;">
-     </a>
-  <span style="vertical-align:bottom">
-    &nbsp;<strong>office for student</strong><br>
-    &nbsp;Winner ELAN HACKTHON
-  </span>
-</p>
-</div>
-
-
-
-
-<br>
-<br>
-<h5> MTTS Programme</h5>
-
-<h5> Level 1</h5>
-<p>
-    <a href="https://drive.google.com/file/d/14AeXM9J5milMt_6qDR-HYSEVC6mb_oHc/view?usp=sharing">
-    <img src="../static/images/education/madr.png" alt="Smiley face image" style="float:left; width:65px; height:65px;">
-     </a>
-  <span style="vertical-align:bottom">
-    &nbsp;<strong>Indian Institute of Technology, Madras</strong><br>
-    &nbsp;MTTS programme
-  </span>
-</p>
-
-
-<br>
-
-<br>
-
-<h5> Geeks for geeks </h5>
-<hr>
-<h5> Data Science</h5>
-<p>
-    <a href="https://drive.google.com/file/d/1JSBV5MXczcUSnChPWG-dBzfdYYOk--Qv/view?usp=drive_link">
-    <img src="../static/images/education/gfg.jpg" alt="Smiley face image" style="float:left; width:65px; height:65px;">
-     </a>
-  <span style="vertical-align:bottom">
-    &nbsp;<strong>GEEKS FOR GEEKS</strong><br>
-    &nbsp; Data Science
-  </span>
-</p>
-
-
-<br>
-
-<br>
+        <!-- Geeks for Geeks -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <h5>Geeks for Geeks</h5>
+                <h6>Data Science</h6>
+                <hr>
+                <div class="card border-light shadow-sm">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="flex-shrink-0 me-3">
+                            <a href="https://drive.google.com/file/d/1JSBV5MXczcUSnChPWG-dBzfdYYOk--Qv/view?usp=drive_link" target="_blank">
+                                <img src="../static/images/education/gfg.jpg" alt="Geeks for Geeks" class="rounded" width="65" height="65">
+                            </a>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title">Geeks for Geeks</h5>
+                            <p class="card-text"><small class="text-muted">Data Science</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 {% endblock %}

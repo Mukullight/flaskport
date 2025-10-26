@@ -1,53 +1,64 @@
 {% extends "main.html" %}
 {% block title %}Page Title{% endblock %}
 {% block content %}
-<h3>Enhanced Logistic Regression with Richards Family Curve</h3>
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h3 class="mb-4 text-center">Enhanced Logistic Regression with Richards Family Curve</h3>
+      
+      <div class="mb-4">
+        <div class="card-body">
+          <p class="lead"><strong>Overview:</strong></p>
+          <p><strong>Innovation</strong>: Replaced traditional sigmoid function in logistic regression with a member of the Richards family of curves for enhanced adaptability to various data distributions.</p>
 
-<p><strong>Overview:</strong></p>
-<p><strong>Innovation</strong>: Replaced traditional sigmoid function in logistic regression with a member of the Richards family of curves for enhanced adaptability to various data distributions.</p>
+          <p class="lead"><strong>Key Features:</strong></p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Flexibility</strong>: Utilizes the Richards curve's parameter <code>m</code> to adjust the curve's steepness, symmetry, and inflection point, providing a better fit for non-standard growth or decay patterns.</li>
+            <li class="mb-2"><strong>Richards Curve Formula</strong>: 
+              <code>P(y=1|x) = (1 + exp(-(a + sum(i=1 to n) b<sub>i</sub> x<sub>i</sub>)))^(-1/m)</code></li>
+          </ul>
 
-<p><strong>Key Features:</strong></p>
-<ul>
-    <li><strong>Flexibility</strong>: Utilizes the Richards curve's parameter <code>m</code> to adjust the curve's steepness, symmetry, and inflection point, providing a better fit for non-standard growth or decay patterns.</li>
-    <li><strong>Richards Curve Formula</strong>: 
-        <code>P(y=1|x) = (1 + exp(-(a + sum(i=1 to n) b<sub>i</sub> x<sub>i</sub>)))^(-1/m)</code></li>
-</ul>
+          <p class="lead"><strong>Advantages:</strong></p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Enhanced Model Fit</strong>: Capable of modeling asymmetric or differently shaped data transitions.</li>
+            <li class="mb-2"><strong>Potential Reduction in Overfitting</strong>: Better captures nuanced data distributions, potentially reducing overfitting in complex scenarios.</li>
+          </ul>
 
-<p><strong>Advantages:</strong></p>
-<ul>
-    <li><strong>Enhanced Model Fit</strong>: Capable of modeling asymmetric or differently shaped data transitions.</li>
-    <li><strong>Potential Reduction in Overfitting</strong>: Better captures nuanced data distributions, potentially reducing overfitting in complex scenarios.</li>
-</ul>
+          <p class="lead"><strong>Implementation:</strong></p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Parameter Tuning</strong>: Employed methods like grid search or gradient descent for optimizing the additional parameter <code>m</code> alongside traditional coefficients.</li>
+            <li class="mb-2"><strong>Regularization</strong>: Applied regularization techniques to manage model complexity introduced by extra parameters.</li>
+          </ul>
 
-<p><strong>Implementation:</strong></p>
-<ul>
-    <li><strong>Parameter Tuning</strong>: Employed methods like grid search or gradient descent for optimizing the additional parameter <code>m</code> alongside traditional coefficients.</li>
-    <li><strong>Regularization</strong>: Applied regularization techniques to manage model complexity introduced by extra parameters.</li>
-</ul>
+          <p class="lead"><strong>Challenges Addressed:</strong></p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Complexity</strong>: Managed increased computational complexity through efficient algorithm design or by leveraging modern computing resources.</li>
+            <li class="mb-2"><strong>Interpretability</strong>: Developed strategies for explaining model decisions despite added complexity, focusing on the impact of <code>m</code> on predictions.</li>
+          </ul>
 
-<p><strong>Challenges Addressed:</strong></p>
-<ul>
-    <li><strong>Complexity</strong>: Managed increased computational complexity through efficient algorithm design or by leveraging modern computing resources.</li>
-    <li><strong>Interpretability</strong>: Developed strategies for explaining model decisions despite added complexity, focusing on the impact of <code>m</code> on predictions.</li>
-</ul>
+          <p class="lead"><strong>Applications:</strong></p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Biological Growth Models</strong>: Particularly effective in modeling population dynamics or biological growth that doesn't follow simple logistic patterns.</li>
+            <li class="mb-2"><strong>Economic Forecasts</strong>: Applied in scenarios where economic growth or decline shows asymmetric trends.</li>
+          </ul>
 
-<p><strong>Applications:</strong></p>
-<ul>
-    <li><strong>Biological Growth Models</strong>: Particularly effective in modeling population dynamics or biological growth that doesn't follow simple logistic patterns.</li>
-    <li><strong>Economic Forecasts</strong>: Applied in scenarios where economic growth or decline shows asymmetric trends.</li>
-</ul>
+          <p class="lead"><strong>Skills Demonstrated:</strong></p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Advanced Statistical Modeling</strong>: Experience with extending classical models into new areas of application.</li>
+            <li class="mb-2"><strong>Data Analysis</strong>: Proficiency in understanding and addressing data anomalies through model adjustment.</li>
+            <li class="mb-2"><strong>Python/R Programming</strong>: Implementation of complex models using these languages, including optimization and visualization techniques.</li>
+          </ul>
 
-<p><strong>Skills Demonstrated:</strong></p>
-<ul>
-    <li><strong>Advanced Statistical Modeling</strong>: Experience with extending classical models into new areas of application.</li>
-    <li><strong>Data Analysis</strong>: Proficiency in understanding and addressing data anomalies through model adjustment.</li>
-    <li><strong>Python/R Programming</strong>: Implementation of complex models using these languages, including optimization and visualization techniques.</li>
-</ul>
-
-<p><strong>Impact:</strong></p>
-<p>Enhanced prediction accuracy for datasets with unique growth patterns, leading to more informed decision-making in various scientific and commercial contexts.</p>
+          <p class="lead"><strong>Impact:</strong></p>
+          <p>Enhanced prediction accuracy for datasets with unique growth patterns, leading to more informed decision-making in various scientific and commercial contexts.</p>
+        </div>
+      </div>
 
 <h3>Synthetic Minority OverSampling using Multivariate distribution</h3>
 <iframe src="https://drive.google.com/file/d/1JUMei_aPGQNs6MrWaGbaX5WbpbkdKM3s/preview" width="90%" height="1000px" allow="autoplay"></iframe>
 
+     </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

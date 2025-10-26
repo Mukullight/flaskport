@@ -1,110 +1,124 @@
 {% extends "main.html" %}
 {% block title %}Page Title{% endblock %}
 {% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4 text-center resume-h1">Work Experience</h1>
 
+    <div class="resume-work-card">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <img src="../static/images/work/figg.jpeg" alt="Smiley face image" class="img-fluid resume-img-experience" style="width:140px; height:140px;">
+            </div>
+            <div class="col-md-10 d-flex align-items-center">
+                <div>
+                    <p class="resume-job-title mb-0">Research project</p>
+                    <p class="resume-location-date mb-0">Machine learning Research</p>
+                    <p class="resume-location-date mb-0">Birmingham</p>
+                    <p class="resume-location-date mb-0">2023</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="list-unstyled">
+                <li class="resume-bullet-item">Developed and deployed a machine learning driven dashboard to cluster FTSE 100 companies based on risk profiles</li>
+                <li class="resume-bullet-item">Managed stakeholder relationships ensuring alignment with goals and responsibilities.</li>
+                <li class="resume-bullet-item">Engineered a data pipeline to ingest and preprocess financial data, integrating key metrics and enhancing risk assessment accuracy with Yahoo Finance API</li>
+                <li class="resume-bullet-item">Designed an intuitive and interactive dashboard interface with advanced visualizations, enabling stake-holders to explore and compare risk profiles dynamically, facilitating data-driven investment strategies and risk-management decisions.</li>
+            </ul>
+        </div>
+    </div>
 
-<h1>Work Experience</h1>
+    <hr class="resume-hr-custom">
 
-<p>
-<img src="../static/images/work/figg.jpeg" alt="Smiley face image"
-style="float:left; width:140px; height:140px;">
-<span style="vertical-align:bottom">
-&nbsp <strong> Research project</strong> <br>
-&nbsp  Machine learning Research <br>
-&nbsp  Birmingham <br>
-&nbsp 2023 
-</span>
-</p>
-<p>
-* Developed and deployed a machine learning driven dashboard to cluster FTSE 100 companies based on
-risk profiles<br>
-* Managed stakeholder relationships ensuring alignment with goals and responsibilities.<br>
-* Engineered a data pipeline to ingest and preprocess financial data, integrating key metrics and enhancing
-risk assessment accuracy with Yahoo Finance API <br>
-* Designed an intuitive and interactive dashboard interface with advanced visualizations, enabling stake-
-holders to explore and compare risk profiles dynamically, facilitating data-driven investment strategies
-and risk-management decisions.<br>
-</p>
+    <div class="resume-work-card">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <img src="../static/images/work/blockchain.png" alt="Smiley face image" class="img-fluid resume-img-experience" style="width:140px; height:140px;">
+            </div>
+            <div class="col-md-10 d-flex align-items-center">
+                <div>
+                    <p class="resume-job-title mb-0">Data Engineering</p>
+                    <p class="resume-location-date mb-0">Software Engineering Intern</p>
+                    <p class="resume-location-date mb-0">Birmingham</p>
+                    <p class="resume-location-date mb-0">2024</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="list-unstyled">
+                <li class="resume-bullet-item">Automated scripts for document generation using Docx module (python)</li>
+                <li class="resume-bullet-item">Decomposition of business requirements into technical tasks</li>
+                <li class="resume-bullet-item">Created reports for 100+ investment firms</li>
+                <li class="resume-bullet-item">Reduced Data-cleaning time by 50 % through automation and other scripting techniques</li>
+                <li class="resume-bullet-item">Production deploys</li>
+            </ul>
+        </div>
+    </div>
 
-<br>
+    <hr class="resume-hr-custom">
 
-<p>
-<img src="../static/images/work/blockchain.png" alt="Smiley face image"
-style="float:left; width:140px; height:140px;">
-<span style="vertical-align:bottom">
-&nbsp <strong> Data Engineering</strong> <br>
-&nbsp  Software Engineering Intern <br>
-&nbsp  Birmingham <br>
-&nbsp 2024
-</span>
-</p>
-<p>
+    <div class="resume-work-card">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <img src="../static/images/work/uni.png" alt="Smiley face image" class="img-fluid resume-img-experience" style="width:140px; height:140px;">
+            </div>
+            <div class="col-md-10 d-flex align-items-center">
+                <div>
+                    <p class="resume-job-title mb-0">Supervised learning/ physics informed Machine Learning</p>
+                    <p class="resume-location-date mb-0">Machine learning Research</p>
+                    <p class="resume-location-date mb-0">India</p>
+                    <p class="resume-location-date mb-0">2022</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="list-unstyled">
+                <li class="resume-bullet-item">Developed a physics-informed machine learning model for simulating population dynamics.</li>
+                <li class="resume-bullet-item">Fine-tuning of parameters using nonlinear optimization techniques.</li>
+                <li class="resume-bullet-item">Model development, boundedness of the solution, stability of the solution, sensitivity analysis withstate-of-the-art modeling techniques.</li>
+                <li class="resume-bullet-item">MCDM models for ranking regions based on carbon footprint.</li>
+            </ul>
+        </div>
+    </div>
 
-* Automated scripts for document generation using Docx module (python)<br>
-* Decomposition of business requirements into technical tasks<br>
-* Created reports for 100+ investment firms<br>
-* Reduced Data-cleaning time by 50 % through automation and other scripting techniques<br>
-* Production deploys<br>
-</p>
-<br>
-<hr size="30">
+    <h2 class="mt-5 mb-4 text-center resume-h2">Society Work</h2>
 
+    <div class="resume-society-card">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <img src="../static/images/education/ims.jpeg" alt="Smiley face image" class="img-fluid resume-img-experience" style="width:140px; height:140px;">
+            </div>
+            <div class="col-md-10 d-flex align-items-center">
+                <div>
+                    <p class="resume-job-title mb-0" style="color: #28a745;">Indian Mathematical Society</p>
+                    <p class="resume-location-date mb-0">India</p>
+                    <p class="resume-location-date mb-0">2022</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="list-unstyled">
+                <li class="resume-bullet-item"><strong style="color: #28a745;">Lecturer</strong>. Supervised Learning- loss functions</li>
+                <li class="resume-bullet-item"><strong style="color: #28a745;">Coordination</strong>. Supporting in the organization (Scheduling, website, events, volunteering).</li>
+            </ul>
+        </div>
+    </div>
 
-<br>
+    <hr class="resume-hr-custom">
 
-<p>
-<img src="../static/images/work/uni.png" alt="Smiley face image"
-style="float:left; width:140px; height:140px;">
-<span style="vertical-align:bottom">
-&nbsp <strong> Supervised learning/ physics informed Machine Learning</strong> <br>
-&nbsp  Machine learning Research <br>
-&nbsp  India <br>
-&nbsp 2022
-</span>
-</p>
-<p>
-
-*  Developed a physics-informed machine learning model for simulating population dynamics.<br>
-* Fine-tuning of parameters using nonlinear optimization techniques.<br>
-* Model development, boundedness of the solution, stability of the solution, sensitivity analysis withstate-of-the-art modeling techniques.<br>
-* MCDM models for ranking regions based on carbon footprint.<br>
-</p>
-<br>
-<hr size="30">
-
-
-<h2> Society Work </h2>
-
-<p>
-<img src="../static/images/education/ims.jpeg" alt="Smiley face image"
-style="float:left; width:px; height:140px;">
-<span style="vertical-align:bottom">
-&nbsp <strong> Indian Mathematical Society</strong> <br>
-&nbsp India <br>
-&nbsp 2022
-</span>
-</p>
-<br>
-<p>
-* **Lecturer**. Supervised Learning- loss functions<br>
-* **Coordination**. Supporting in the organization (Scheduling, website, events, volunteering).<br>
-</p>
-
-<hr size="30">
-
-
-<p>
-<img src="../static/images/education/sds.png" alt="Smiley face image"
-style="float:left; width:px; height:140px;">
-<span style="vertical-align:bottom">
-&nbsp <strong> Society for Data Science</strong> <br>
-&nbsp India <br>
-&nbsp 2022
-</span>
-</p>
-
-
-<br>
-
-
+    <div class="resume-society-card">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <img src="../static/images/education/sds.png" alt="Smiley face image" class="img-fluid resume-img-experience" style="width:140px; height:140px;">
+            </div>
+            <div class="col-md-10 d-flex align-items-center">
+                <div>
+                    <p class="resume-job-title mb-0" style="color: #28a745;">Society for Data Science</p>
+                    <p class="resume-location-date mb-0">India</p>
+                    <p class="resume-location-date mb-0">2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

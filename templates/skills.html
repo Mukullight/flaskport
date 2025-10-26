@@ -1,99 +1,420 @@
 {% extends "main.html" %}
 {% block title %}Page Title{% endblock %}
 {% block content %}
-<h1>Skills</h1>
+<div class="container my-5">
+        <h1 class="text-center mb-4 text-primary">Skills</h1>
 
-<!-- Programming Skills -->
-<h3>Programming Skills</h3>
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" style="float:left; padding-right:10px" width="100" height="100"> Python
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo_icon.png" style="float:left; padding-right:10px" width="100" height="100"> Java
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" style="float:left; padding-right:10px" width="100" height="100"> C
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" style="float:left; padding-right:10px" width="100" height="100"> SQL
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://datascientest.com/en/files/2024/01/cypher.webp" style="float:left; padding-right:10px" width="100" height="100"> Cypher
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" style="float:left; padding-right:10px" width="100" height="100"> HTML
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" style="float:left; padding-right:10px" width="100" height="100"> CSS
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/1200px-LaTeX_logo.svg.png" style="float:left; padding-right:10px" width="100" height="100"> LaTeX
-    </td>
-  </tr>
-</table>
-<br>
+        <!-- Professional Skills -->
+        <h3 class="mb-3">Professional Skills</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <td class="align-middle text-center fw-bold">Compassion</td>
+                    <td class="align-middle text-center fw-bold">Caring</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Time Management</td>
+                    <td class="align-middle text-center fw-bold">Good Negotiation Skills</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Conflict Resolution</td>
+                    <td class="align-middle text-center fw-bold">Employee Relations</td>
+                </tr>
+            </table>
+        </div>
+        <br>
 
-<!-- Databases -->
-<h3>Databases</h3>
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" style="float:left; padding-right:10px" width="100" height="100"> PostgreSQL
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png" style="float:left; padding-right:10px" width="100" height="100"> MongoDB
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://avatars.githubusercontent.com/u/108316715?s=280&v=4" style="float:left; padding-right:10px" width="100" height="100"> Chroma
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/2048px-Sqlite-square-icon.svg.png" style="float:left; padding-right:10px" width="100" height="100"> SQLite
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://labs.mysql.com/common/logos/mysql-logo.svg" style="float:left; padding-right:10px" width="100" height="100"> MySQL
-    </td>
-    <td style="border: 1px solid #000;"></td> <!-- Empty cell for alignment -->
-  </tr>
-</table>
-<br>
+        <!-- Programming Skills -->
+        <h3 class="mb-3">Programming Skills</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped skill-table">
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Python" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"> Python
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Java" src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo_icon.png"> Java
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="C" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png"> C
+                    </td>
+                    <td class="align-middle">
+                        <img alt="SQL" src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png"> SQL
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Cypher" src="https://datascientest.com/en/files/2024/01/cypher.webp"> Cypher
+                    </td>
+                    <td class="align-middle">
+                        <img alt="HTML" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"> HTML
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="CSS" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"> CSS
+                    </td>
+                    <td class="align-middle">
+                        <img alt="LaTeX" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/1200px-LaTeX_logo.svg.png"> LaTeX
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="JavaScript" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"> JavaScript
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Ruby" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/800px-Ruby_logo.svg.png"> Ruby
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="PHP" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Php-logo.png/640px-Php-logo.png"> PHP
+                    </td>
+                    <td class="align-middle">
+                        <img alt="C#" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/C_Sharp_Icon.png/640px-C_Sharp_Icon.png"> C#
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
 
-<!-- MLOps Frameworks -->
-<h3>MLOps Frameworks</h3>
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://raw.githubusercontent.com/kubeflow/website/master/static/images/logo.svg" style="float:left; padding-right:10px" width="100" height="100"> Kubeflow
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="data:image/png;base64,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" style="float:left; padding-right:10px" width="100" height="100"> Docker
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png" style="float:left; padding-right:10px" width="100" height="100"> Kubernetes
-    </td>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OpenShift-LogoType.svg/1200px-OpenShift-LogoType.svg.png" style="float:left; padding-right:10px" width="100" height="100"> OpenShift
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #000;">
-      <img alt="Link" src="https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35.png" style="float:left; padding-right:10px" width="100" height="100"> AWS SageMaker
-    </td>
-    <td style="border: 1px solid #000;"></td> <!-- Empty cell for alignment -->
-  </tr>
-</table>
-<br>
+        <!-- Databases -->
+        <h3 class="mb-3">Databases</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped skill-table">
+                <tr>
+                    <td class="align-middle">
+                        <img alt="PostgreSQL" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"> PostgreSQL
+                    </td>
+                    <td class="align-middle">
+                        <img alt="MongoDB" src="https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png"> MongoDB
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Chroma" src="https://avatars.githubusercontent.com/u/108316715?s=280&v=4"> Chroma
+                    </td>
+                    <td class="align-middle">
+                        <img alt="SQLite" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/2048px-Sqlite-square-icon.svg.png"> SQLite
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="MySQL" src="https://labs.mysql.com/common/logos/mysql-logo.svg"> MySQL
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Neo4j" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Neo4j-logo2024color.png/640px-Neo4j-logo2024color.png"> Neo4j
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Sentry" src="https://raw.githubusercontent.com/getsentry/brand/develop/static/images/logo-monochrome-black.svg"> Sentry
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Supabase" src="https://supabase.com/images/supabase-main-logo.svg"> Supabase
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="DynamoDB" src="https://d1.awsstatic.com/products/databases/amazon-dynamodb-logo%402x.png"> DynamoDB
+                    </td>
+                    <td class="align-middle">
+                        <img alt="DuckDB" src="https://duckdb.org/static/img/duckdb-logo-dark.svg"> DuckDB
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Firebase" src="https://firebase.google.com/static/downloads/brand-guidelines/SVG/logo-logomark.svg"> Firebase
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Athena" src="https://d1.awsstatic.com/products/databases/amazon-athena%402x.png"> Athena
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <!-- Operating Systems -->
+        <h3 class="mb-3">Operating Systems</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped skill-table">
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Ubuntu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ubuntu_22.04_LTS_logo.svg/800px-Ubuntu_22.04_LTS_logo.svg.png"> Ubuntu
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Kali Linux" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Kali_Logo.svg/800px-Kali_Logo.svg.png"> Kali Linux
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Debian" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Debian_logo_first.svg/800px-Debian_logo_first.svg.png"> Debian
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Windows" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Windows_logo_hidden_lockup_2022.svg/800px-Windows_logo_hidden_lockup_2022.svg.png"> Microsoft Windows
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="macOS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/MacOS_logo.svg/800px-MacOS_logo.svg.png"> macOS
+                    </td>
+                    <td class="align-middle">
+                        <img alt="VMware" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/VMware_logo.svg/800px-VMware_logo.svg.png"> VMware
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="VirtualBox" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/VirtualBox_Logo_512.png/800px-VirtualBox_Logo_512.png"> VirtualBox
+                    </td>
+                    <td class="align-middle text-center fw-bold">Other Hypervisors</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <!-- Technical Frameworks -->
+        <h3 class="mb-3">Technical Frameworks</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped skill-table">
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Hadoop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hadoop_logo.svg/800px-Hadoop_logo.svg.png"> Hadoop Streaming
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Databricks" src="https://www.databricks.com/wp-content/uploads/2023/07/databricks-logo-primary-rgb.png"> Databricks
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Kafka" src="https://kafka.apache.org/images/apache-kafka.png"> Kafka
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Spark" src="https://spark.apache.org/images/spark-logo.png"> Apache Spark
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Scala" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Scala-logo.svg/800px-Scala-logo.svg.png"> Scala
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Snowflake" src="https://www.snowflake.com/_next/static/media/logo-black.1c2d6d3a.svg"> Snowflake
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">REST APIs</td>
+                    <td class="align-middle text-center fw-bold">PyPI Packages</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Testing Packages</td>
+                    <td class="align-middle">
+                        <img alt="Gitpod" src="https://gitpod.io/images/gitpod-mark.svg"> Gitpod
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="ONA" src="https://ona.io/static/img/ona-logo.svg"> ONA
+                    </td>
+                    <td class="align-middle">
+                        <img alt="GitLab" src="https://about.gitlab.com/images/press/meta-image.png"> GitLab
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Red Hat" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Red_Hat_logo.svg/512px-Red_Hat_logo.svg.png"> Red Hat
+                    </td>
+                    <td class="align-middle">
+                        <img alt="OpenShift" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OpenShift-LogoType.svg/1200px-OpenShift-LogoType.svg.png"> OpenShift
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Momento</td>
+                    <td class="align-middle text-center fw-bold">Code/DevSpaces</td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Redis" src="https://redis.io/wp-content/uploads/2023/06/redis-logo.png"> Redis
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Jenkins" src="https://www.jenkins.io/images/logos/jenkins/jenkins.png"> Jenkins
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">ETL Testing</td>
+                    <td class="align-middle">
+                        <img alt="SoapUI" src="https://www.soapui.org/img/SoapUI-logo.png"> SoapUI
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="AWS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png"> AWS
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Selenium" src="https://selenium.dev/images/selenium_logo.svg"> Selenium
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <!-- MLOps Frameworks -->
+        <h3 class="mb-3">MLOps Frameworks</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped skill-table">
+                <tr>
+                    <td class="align-middle">
+                        <img alt="MLFlow" src="https://mlflow.org/docs/latest/_static/MLflow-logo.png"> MLFlow
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Kubeflow" src="https://raw.githubusercontent.com/kubeflow/website/master/static/images/logo.svg"> Kubeflow
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="DVC" src="https://dvc.org/img/logo.svg"> DVC
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Docker" src="data:image/png;base64,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"> Docker
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Kubernetes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png"> Kubernetes
+                    </td>
+                    <td class="align-middle">
+                        <img alt="OpenShift" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OpenShift-LogoType.svg/1200px-OpenShift-LogoType.svg.png"> OpenShift
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="AWS SageMaker" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Amazon_SageMaker_Logo.svg/768px-Amazon_SageMaker_Logo.svg.png"> AWS SageMaker
+                    </td>
+                    <td class="align-middle">
+                        <img alt="EKS" src="https://d1.awsstatic.com/products/containers/amazon-eks%402x.png"> EKS
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="ECS" src="https://d1.awsstatic.com/products/containers/amazon-ecs%402x.png"> ECS
+                    </td>
+                    <td class="align-middle">
+                        <img alt="ECR" src="https://d1.awsstatic.com/products/containers/amazon-ecr%402x.png"> ECR
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">GitLFS</td>
+                    <td class="align-middle text-center fw-bold">SageMaker Feature Store</td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="ZenML" src="https://zenml.io/assets/images/zenml_logo_dark.png"> ZenML
+                    </td>
+                    <td class="align-middle">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <!-- Component Libraries -->
+        <h3 class="mb-3">Component Libraries</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped skill-table">
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Chakra UI" src="https://chakra-ui.com/_next/static/media/chakra-logo-black.2e6b0e6a.svg"> Chakra UI
+                    </td>
+                    <td class="align-middle text-center fw-bold">Reflex</td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Plotly" src="https://plotly.com/python/static/image/plotly.png"> Plotly
+                    </td>
+                    <td class="align-middle text-center fw-bold">Shadcn</td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Ant Design" src="https://gw.alipayobjects.com/mdn/rms_b5fcc5/afts/img/A*0AbwQYj3B94AAAAAAAAAAABkARQnAQ"> Ant Design
+                    </td>
+                    <td class="align-middle">
+                        <img alt="React Bootstrap" src="https://react-bootstrap.netlify.app/img/logo.svg"> React Bootstrap
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Streamlit" src="https://streamlit.io/images/brand/streamlit-mark-color.png"> Streamlit
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Tailwind" src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5d8b4d.svg"> Tailwind
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="Bootstrap" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"> Bootstrap
+                    </td>
+                    <td class="align-middle text-center fw-bold">Gluestack UI</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Tamagui</td>
+                    <td class="align-middle text-center fw-bold">React Native Reusables</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Material Kit React Native</td>
+                    <td class="align-middle text-center fw-bold">React Native Elements</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">React Native UI Kitten</td>
+                    <td class="align-middle text-center fw-bold">React Native Paper</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">React Native Material Kit</td>
+                    <td class="align-middle text-center fw-bold">React Native Material UI</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+        <!-- Neural Networks -->
+        <h3 class="mb-3">Neural Networks</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped skill-table">
+                <tr>
+                    <td class="align-middle">
+                        <img alt="PyTorch" src="https://pytorch.org/assets/images/pytorch-logo.png"> PyTorch
+                    </td>
+                    <td class="align-middle">
+                        <img alt="TensorFlow" src="https://www.tensorflow.org/images/tensorflow_logo.svg"> TensorFlow
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img alt="TensorBoard" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/TensorBoard_logo.svg/512px-TensorBoard_logo.svg.png"> TensorBoard
+                    </td>
+                    <td class="align-middle">
+                        <img alt="Ray" src="https://raw.githubusercontent.com/ray-project/ray/master/doc/source/images/ray_logo.png"> Ray
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Neural Networks (NN)</td>
+                    <td class="align-middle text-center fw-bold">Recurrent Neural Networks (RNN)</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Long Short-Term Memory (LSTM)</td>
+                    <td class="align-middle text-center fw-bold">Gated Recurrent Unit (GRU)</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Convolutional Neural Networks (CNN)</td>
+                    <td class="align-middle text-center fw-bold">Transfer Learning</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Optimization of Algorithms</td>
+                    <td class="align-middle text-center fw-bold">Regularization</td>
+                </tr>
+                <tr>
+                    <td class="align-middle text-center fw-bold">Hyperparameter Tuning</td>
+                    <td class="align-middle text-center fw-bold">Batch Normalization</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 {% endblock %}

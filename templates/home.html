@@ -62,20 +62,22 @@
 
 
     <div class="container-fluid">
-      <div class="row align-items-center">
+      <div class="row align-items-left">
           <!-- Cube Section -->
-          <div class="col-md-4 about-section">
+          <div class="col-md-6 about-section">
             <h1 class="mb-3">About Me</h1>
             <h4 class="card-text">
                 Highly skilled, passionate, and hardworking AI developer with an ability to complete functional specifications by
                 developing, testing, and deploying real-time solutions. Ensuring compliance and security standards.
             </h4>
         </div>
-          <div class="col-md-7 text-center">
-            <div class="cube">
+        <!-- Cube Section -->
+
+          <div class="col-md-6 text-center">
+            <!--<div class="cube">
               <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
               <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/OiN7KW8ja6AN7U9K/scene.splinecode"></spline-viewer>
-          </div>
+          </div>-->
           </div>
           
           <!-- Text Section -->
@@ -86,7 +88,7 @@
            <div class="container my-4">
             <div class="row g-4">
               <!-- Card 1: Presentation -->
-              <div class="col-12 col-md-6 col-lg-4">
+              <div class="marcard col-12 col-md-6 col-lg-4">
                 <a href="{{ url_for('home') }}" class="text-decoration-none text-dark">
                   <div class="card h-100">
                     <img src="{{ url_for('static', filename='images/pgimages/person.png') }}" class="card-img-top" alt="Presentation">
@@ -102,7 +104,7 @@
               </div>
           
               <!-- Card 2: Education -->
-              <div class="col-12 col-md-6 col-lg-4">
+              <div class="marcard col-12 col-md-6 col-lg-4">
                 <a href="{{ url_for('education') }}" class="text-decoration-none text-dark">
                   <div class="card h-100">
                     <img src="{{ url_for('static', filename='images/pgimages/university.png') }}" class="card-img-top" alt="Education">
@@ -118,7 +120,7 @@
               </div>
           
               <!-- Card 3: Experience -->
-              <div class="col-12 col-md-6 col-lg-4">
+              <div class="marcard col-12 col-md-6 col-lg-4">
                 <a href="{{ url_for('experience') }}" class="text-decoration-none text-dark">
                   <div class="card h-100">
                     <img src="{{ url_for('static', filename='images/pgimages/tools.png') }}" class="card-img-top" alt="Experience">
@@ -134,7 +136,7 @@
               </div>
           
               <!-- Card 4: Skills -->
-              <div class="col-12 col-md-6 col-lg-4">
+              <div class="marcard col-12 col-md-6 col-lg-4">
                 <a href="{{ url_for('skills') }}" class="text-decoration-none text-dark">
                   <div class="card h-100">
                     <img src="{{ url_for('static', filename='images/pgimages/skills.png') }}" class="card-img-top" alt="Skills">
@@ -162,7 +164,7 @@
    <div class="row g-4">
 
      <!-- Card 1: Research -->
-     <div class="col-12 col-md-6 col-lg-4">
+     <div class="marcard col-12 col-md-6 col-lg-4">
        <a href="{{ url_for('research') }}" class="text-decoration-none text-dark">
          <div class="card h-100">
            <img src="{{ url_for('static', filename='images/icons/idea.png') }}" class="card-img-top" alt="Research">
@@ -179,7 +181,7 @@
 
  
      <!-- Card 2: Projects -->
-     <div class="col-12 col-md-6 col-lg-4">
+     <div class="marcard col-12 col-md-6 col-lg-4">
        <a href="{{ url_for('projects') }}" class="text-decoration-none text-dark">
          <div class="card h-100">
            <img src="{{ url_for('static', filename='images/icons/project.png') }}" class="card-img-top" alt="Projects">
@@ -196,7 +198,7 @@
 
  
      <!-- Card 3: Books -->
-     <div class="col-12 col-md-6 col-lg-4">
+     <div class="marcard col-12 col-md-6 col-lg-4">
        <a href="{{ url_for('books') }}" class="text-decoration-none text-dark">
          <div class="card h-100">
            <img src="{{ url_for('static', filename='images/icons/book2.png') }}" class="card-img-top" alt="books">
@@ -213,7 +215,7 @@
 
  
      <!-- Card 4: Open Source -->
-     <div class="col-12 col-md-6 col-lg-4">
+     <div class="marcard col-12 col-md-6 col-lg-4">
        <a href="{{ url_for('opensource') }}" class="text-decoration-none text-dark">
          <div class="card h-100">
            <img src="{{ url_for('static', filename='images/icons/collab.png') }}" class="card-img-top" alt="Skills">

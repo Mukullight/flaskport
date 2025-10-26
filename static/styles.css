@@ -2,7 +2,6 @@
 body {
   font-family: 'Ubuntu Mono', monospace, sans-serif;
   margin: 0;
-  overflow-x: hidden;
 }
 
 /* Navbar Styling */
@@ -110,10 +109,10 @@ spline-viewer {
   text-align: left;
   margin-top: 1rem;
   shape-margin: 5px;
-  margin-right: 1rem;
-  margin-left: 1rem;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card img {
@@ -209,3 +208,165 @@ padding: 20px;
 .footer a {
   color: white!important;
 }
+
+.marcard{
+  border-style: dashed;
+  border-width: 6px;
+  border-color: #f46b30;
+}
+.resume-work-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-left: 5px solid #007bff;
+        }
+        .resume-society-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-left: 5px solid #28a745;
+        }
+        .resume-job-title {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .resume-location-date {
+            color: #6c757d;
+        }
+        .resume-bullet-item {
+            color: #495057;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .resume-bullet-item::before {
+            content: "•";
+            color: #007bff;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .resume-hr-custom {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #007bff, #28a745, #ffc107);
+            margin: 30px 0;
+        }
+        .resume-h1 {
+            color: #007bff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .resume-h2 {
+            color: #28a745;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .resume-img-experience {
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .resume-img-experience:hover {
+            transform: scale(1.05);
+        }
+
+
+        
+        :root {
+            --orange-primary: #fd7e14;
+            --orange-secondary: #ffc107;
+            --orange-dark: #e86100;
+        }
+        body {
+            background-color: #fff3cd;
+            color: #212529;
+        }
+        .mukul-project-card {
+            background-color: #fff;
+            border: 2px solid var(--orange-primary);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(253, 126, 20, 0.2);
+        }
+        .mukul-project-header {
+            background-color: var(--orange-primary);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-weight: bold;
+        }
+        .mukul-project-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .mukul-project-info {
+            padding: 1.5rem;
+        }
+        .mukul-divider {
+            border: none;
+            height: 5px;
+            background-color: var(--orange-primary);
+            margin: 2rem 0;
+        }
+        .mukul-twitter-embed {
+            margin: 1rem 0;
+            border-left: 4px solid var(--orange-primary);
+            background-color: #fff8e1;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .mukul-btn-orange {
+            background-color: var(--orange-primary);
+            border-color: var(--orange-primary);
+            color: white;
+        }
+        .mukul-btn-orange:hover {
+            background-color: var(--orange-dark);
+            border-color: var(--orange-dark);
+            color: white;
+        }
+        .twitter-tweet {
+            max-width: 100% !important;
+        }
+        .twitter-tweet video,
+        .twitter-tweet img {
+            max-width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important;
+        }
+        .gallery-img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .skill-table img {
+            max-width: 100px;
+            max-height: 100px;
+            float: left;
+            padding-right: 10px;
+        }
+        .skill-table td {
+            vertical-align: middle;
+            padding: 15px;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        h3 {
+            color: #495057;
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 5px;
+        }
+
