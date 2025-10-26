@@ -1,38 +1,97 @@
 {% extends "main.html" %}
 {% block title %}Page Title{% endblock %}
 {% block content %}
-    
-    <div class="container my-5">
-        <h1 class="text-center mb-5 text-orange-primary" style="color: var(--orange-primary);">Projects Portfolio</h1>
+<div class="container my-5">
+        <h1 class="text-center mb-5 text-orange-primary">Projects Portfolio</h1>
        
-
-      <!-- project 1: Blockhouse  -->
+        <!-- Project 1: Factity -->
         <div class="row">
             <div class="col-12">
                 <div class="mukul-project-card">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../static/images/blockhouse.png" alt="Blockhouse Project Preview" class="mukul-project-image">
+                            <img src="https://factity.co.uk/images/Fact-ity.png" alt="Factity preview" class="mukul-project-image">
                         </div>
                         <div class="col-md-8">
-                            <div class="mukul-project-header">
-                                <h3 class="mb-0">Blockhouse</h3>
-                                <p class="mb-0 small">A Time and volume variant trade strategy for optimal trade execution</p>
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">Factity</h3>
+                                    <p class="mb-0 small text-muted">A mission to make ai systems more helpful, harmless and humane</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <p class="mb-3">Factity is an innovative platform aimed at enhancing the usability and safety of AI systems. By focusing on user-centric design and ethical considerations, Factity strives to create AI solutions that are not only effective but also align with human values.</p>
+                                    <a href="https://github.com/Mukullight/Factity" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
                             </div>
-                            <div class="mukul-project-info">
-                                <p>Blockhouse is a twap and vwap based trade execution strategy for offloading the order books in an optimal manner using agent based trade execution techniques. It aims to minimize market impact and achieve better pricing by intelligently scheduling and executing trades over time.</p>
-                            </div>
-                                <a href="https://github.com/Mukullight/blockhouse" class="btn mukul-btn-orange btn-sm">View on GitHub</a> <!-- Assuming repo link -->
                         </div>
                     </div>
                 </div>
                 <div class="foriframe">
+                    <iframe src="https://factity.co.uk/" frameborder="0" allowfullscreen class="w-100" style="height: 80vh;"></iframe>
+                </div>
+                <hr class="mukul-divider">
+            </div>
+        </div>  
 
+        <!-- Project 2: Flood Monitoring System -->
+        <div class="row">
+            <div class="col-12">
+                <div class="mukul-project-card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../static/images/flood.png" alt="Flood Monitoring System Preview" class="mukul-project-image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">Flood monitoring system</h3>
+                                    <p class="mb-0 small text-muted">Real time flood monitoring system</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <p class="mb-3">Flood Monitoring Analytics harnesses the Environment Agency's Flood Monitoring API for real-time UK flood data. Built with plotly frontend, it fetches warnings, station readings, and levels via REST endpoints. Leaflet maps and the visuals display geo-targeted insights, deployed serverlessly on Render for scalability.</p>
+                                    <a href="https://github.com/Mukullight/cmcl" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foriframe">
+                    <iframe src="https://cmcl.onrender.com/" frameborder="0" allowfullscreen class="w-100" style="height: 80vh;"></iframe>
+                </div>
+                <hr class="mukul-divider">
+            </div>
+        </div>  
+
+        <!-- Project 3: Blockhouse -->
+        <div class="row">
+            <div class="col-12">
+                <div class="mukul-project-card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07Qn3x63AZKIWQcPat_7kIoeKBlAvWiH3FQ&s" alt="Blockhouse Project Preview" class="mukul-project-image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">Blockhouse</h3>
+                                    <p class="mb-0 small text-muted">A Time and volume variant trade strategy for optimal trade execution</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <p class="mb-3">Blockhouse is a twap and vwap based trade execution strategy for offloading the order books in an optimal manner using agent based trade execution techniques. It aims to minimize market impact and achieve better pricing by intelligently scheduling and executing trades over time.</p>
+                                    <a href="https://github.com/Mukullight/blockhouse" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foriframe">
+                    <iframe src="https://mukullight.github.io/blockhouse/" frameborder="0" allowfullscreen class="w-100" style="height: 80vh;"></iframe>
                 </div>
                 <hr class="mukul-divider">
             </div>
         </div>    
-        <!-- Project 1: Orange -->
+
+        <!-- Project 4: Orange -->
         <div class="row">
             <div class="col-12">
                 <div class="mukul-project-card">
@@ -41,13 +100,15 @@
                             <img src="../static/images/projects/orange.png" alt="Orange Project Preview" class="mukul-project-image">
                         </div>
                         <div class="col-md-8">
-                            <div class="mukul-project-header">
-                                <h3 class="mb-0">Orange 🍊</h3>
-                                <p class="mb-0 small">🧪 An AI-based Social Network</p>
-                            </div>
-                            <div class="mukul-project-info">
-                                <p>In this service, users can engage in conversations, share interesting facts, and fact-check, leveraging Mistral AI's powerful capabilities to enhance interaction and accuracy.</p>
-                                <a href="https://github.com/Mukullight/orange" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">Orange 🍊</h3>
+                                    <p class="mb-0 small text-muted">🧪 An AI-based Social Network</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <p class="mb-3">In this service, users can engage in conversations, share interesting facts, and fact-check, leveraging Mistral AI's powerful capabilities to enhance interaction and accuracy.</p>
+                                    <a href="https://github.com/Mukullight/orange" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -65,7 +126,7 @@
             </div>
         </div>
 
-        <!-- Project 2: Null Val -->
+        <!-- Project 5: NULLVAL -->
         <div class="row">
             <div class="col-12">
                 <div class="mukul-project-card">
@@ -74,16 +135,18 @@
                             <img src="../static/images/projects/nullval.png" alt="NULLVAL" class="mukul-project-image">
                         </div>
                         <div class="col-md-8">
-                            <div class="mukul-project-header">
-                                <h3 class="mb-0">NULLVAL</h3>
-                                <p class="mb-0 small">A Library for data cleaning</p>
-                            </div>
-                            <div class="mukul-project-info">
-                                <ul class="list-unstyled">
-                                    <li>This repository contains different kinds of methods for the treatment of null values and outliers</li>
-                                    <li>Using various kinds of numerical techniques for the ideal replacement of values in your dataframe</li>
-                                </ul>
-                                <a href="https://github.com/Mukullight/nullvalue" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">NULLVAL</h3>
+                                    <p class="mb-0 small text-muted">A Library for data cleaning</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <ul class="list-unstyled mb-3">
+                                        <li>This repository contains different kinds of methods for the treatment of null values and outliers</li>
+                                        <li>Using various kinds of numerical techniques for the ideal replacement of values in your dataframe</li>
+                                    </ul>
+                                    <a href="https://github.com/Mukullight/nullvalue" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,7 +162,7 @@
             </div>
         </div>
 
-        <!-- Project 3: RAG ENGINE -->
+        <!-- Project 6: RAG ENGINE -->
         <div class="row">
             <div class="col-12">
                 <div class="mukul-project-card">
@@ -108,16 +171,18 @@
                             <img src="../static/images/projects/RAG.png" alt="RAG Engine" class="mukul-project-image">
                         </div>
                         <div class="col-md-8">
-                            <div class="mukul-project-header">
-                                <h3 class="mb-0">RAG ENGINE</h3>
-                                <p class="mb-0 small">RAG engine with a locally run LLM</p>
-                            </div>
-                            <div class="mukul-project-info">
-                                <ul class="list-unstyled">
-                                    <li>This project helps the user to access the knowledge base to get topic specific responses</li>
-                                    <li>Locally run LLM is used to read and process the document and assign the importance of the doc and generate a more appropriate response</li>
-                                </ul>
-                                <a href="https://github.com/Mukullight/rag-engine" class="btn mukul-btn-orange btn-sm">View on GitHub</a> <!-- Assuming repo link -->
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">RAG ENGINE</h3>
+                                    <p class="mb-0 small text-muted">RAG engine with a locally run LLM</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <ul class="list-unstyled mb-3">
+                                        <li>This project helps the user to access the knowledge base to get topic specific responses</li>
+                                        <li>Locally run LLM is used to read and process the document and assign the importance of the doc and generate a more appropriate response</li>
+                                    </ul>
+                                    <a href="https://github.com/Mukullight/rag-engine" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,7 +198,7 @@
             </div>
         </div>
 
-        <!-- Project 4: Character AI -->
+        <!-- Project 7: Character AI -->
         <div class="row">
             <div class="col-12">
                 <div class="mukul-project-card">
@@ -142,14 +207,16 @@
                             <img src="../static/images/projects/dost.jpg" alt="Character AI" class="mukul-project-image">
                         </div>
                         <div class="col-md-8">
-                            <div class="mukul-project-header">
-                                <h3 class="mb-0">Character AI</h3>
-                                <p class="mb-0 small">Responses in the tone of the Character</p>
-                            </div>
-                            <div class="mukul-project-info">
-                                <p><strong>The Character AI project</strong>, particularly when it involves creating or interacting with an AI character emulating the style or persona of Fyodor Dostoevsky's characters, involves leveraging advanced natural language processing and machine learning techniques to generate responses that reflect his literary style, philosophical viewpoints, and character traits.</p>
-                                <p>Dostoevsky's writing is known for its psychological depth, complex sentence structures, and a rich, sometimes dark, vocabulary. The AI is trained on a corpus of Dostoevsky's texts to learn this style, ensuring responses mimic his literary tone, including the use of rhetorical questions, introspections, and a nuanced approach to morality.</p>
-                                <a href="https://github.com/Mukullight/character-ai" class="btn mukul-btn-orange btn-sm">View on GitHub</a> <!-- Assuming repo link -->
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">Character AI</h3>
+                                    <p class="mb-0 small text-muted">Responses in the tone of the Character</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <p class="mb-3"><strong>The Character AI project</strong>, particularly when it involves creating or interacting with an AI character emulating the style or persona of Fyodor Dostoevsky's characters, involves leveraging advanced natural language processing and machine learning techniques to generate responses that reflect his literary style, philosophical viewpoints, and character traits.</p>
+                                    <p class="mb-3">Dostoevsky's writing is known for its psychological depth, complex sentence structures, and a rich, sometimes dark, vocabulary. The AI is trained on a corpus of Dostoevsky's texts to learn this style, ensuring responses mimic his literary tone, including the use of rhetorical questions, introspections, and a nuanced approach to morality.</p>
+                                    <a href="https://github.com/Mukullight/character-ai" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,7 +232,7 @@
             </div>
         </div>
 
-        <!-- Project 5: Recommendation System -->
+        <!-- Project 8: Recommendation System -->
         <div class="row">
             <div class="col-12">
                 <div class="mukul-project-card">
@@ -174,16 +241,18 @@
                             <img src="../static/images/projects/recco.png" alt="Recommendation System" class="mukul-project-image">
                         </div>
                         <div class="col-md-8">
-                            <div class="mukul-project-header">
-                                <h3 class="mb-0">Recommendation System</h3>
-                                <p class="mb-0 small">Recommend movies based on the selected content</p>
-                            </div>
-                            <div class="mukul-project-info">
-                                <ul class="list-unstyled">
-                                    <li><strong>Hybrid Recommendation Engine:</strong> Utilizes a combination of collaborative and content-based filtering to provide highly personalized suggestions, enhancing user engagement by adapting to both collective user behavior and individual preferences.</li>
-                                    <li><strong>Real-time Learning and Scalability:</strong> The system continuously learns from user interactions in real-time, ensuring recommendations evolve with user tastes, while its scalable architecture efficiently handles large datasets for quick, accurate results.</li>
-                                </ul>
-                                <a href="https://github.com/Mukullight/recommendation-system" class="btn mukul-btn-orange btn-sm">View on GitHub</a> <!-- Assuming repo link -->
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">Recommendation System</h3>
+                                    <p class="mb-0 small text-muted">Recommend movies based on the selected content</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <ul class="list-unstyled mb-3">
+                                        <li><strong>Hybrid Recommendation Engine:</strong> Utilizes a combination of collaborative and content-based filtering to provide highly personalized suggestions, enhancing user engagement by adapting to both collective user behavior and individual preferences.</li>
+                                        <li><strong>Real-time Learning and Scalability:</strong> The system continuously learns from user interactions in real-time, ensuring recommendations evolve with user tastes, while its scalable architecture efficiently handles large datasets for quick, accurate results.</li>
+                                    </ul>
+                                    <a href="https://github.com/Mukullight/recommendation-system" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -199,7 +268,7 @@
             </div>
         </div>
 
-        <!-- Project 6: TOKVIZ -->
+        <!-- Project 9: TOKVIZ -->
         <div class="row">
             <div class="col-12">
                 <div class="mukul-project-card">
@@ -208,15 +277,17 @@
                             <img src="../static/images/projects/tokviz.png" alt="TOKVIZ" class="mukul-project-image">
                         </div>
                         <div class="col-md-8">
-                            <div class="mukul-project-header">
-                                <h3 class="mb-0">TOKVIZ</h3>
-                                <p class="mb-0 small">Tokviz - a token visualizer</p>
-                            </div>
-                            <div class="mukul-project-info">
-                                <ul class="list-unstyled">
-                                    <li><strong>Multi-Model Tokenization Comparison:</strong> Enables visualization of how different language models tokenize text, using color-coding to differentiate tokens based on their properties, which aids in understanding and comparing tokenization patterns across models.</li>
-                                </ul>
-                                <a href="https://github.com/Mukullight/tokviz" class="btn mukul-btn-orange btn-sm">View on GitHub</a> <!-- Assuming repo link -->
+                            <div class="p-3">
+                                <div class="mukul-project-header">
+                                    <h3 class="mb-0">TOKVIZ</h3>
+                                    <p class="mb-0 small text-muted">Tokviz - a token visualizer</p>
+                                </div>
+                                <div class="mukul-project-info mt-2">
+                                    <ul class="list-unstyled mb-3">
+                                        <li><strong>Multi-Model Tokenization Comparison:</strong> Enables visualization of how different language models tokenize text, using color-coding to differentiate tokens based on their properties, which aids in understanding and comparing tokenization patterns across models.</li>
+                                    </ul>
+                                    <a href="https://github.com/Mukullight/tokviz" class="btn mukul-btn-orange btn-sm">View on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -235,4 +306,4 @@
     <!-- Twitter Widget Script -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- Bootstrap JS -->
-{% endblock %}
+    {% endblock %}
